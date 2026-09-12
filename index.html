@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Primeira Venda na Kiwify — curso prático para quem quer começar no mercado digital.">
+<title>Primeira Venda na Kiwify | Curso Completo</title>
+<style>
+:root{--bg:#050806;--card:#0b120e;--green:#20f477;--green2:#8cffbd;--text:#f4fff8;--muted:#aebbb3;--line:#1d3a2a;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}.container{width:min(92%,var(--max));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(5,8,6,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:900;letter-spacing:.3px}.brand span{color:var(--green)}
+.nav a:not(.btn){color:var(--muted);font-size:14px;margin-left:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:#031008;font-weight:900;padding:15px 24px;border-radius:12px;box-shadow:0 0 28px rgba(32,244,119,.18);transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.btn.big{font-size:18px;padding:18px 28px}
+.hero{padding:78px 0 70px;background:radial-gradient(circle at 50% 20%,rgba(26,176,83,.25),transparent 38%),linear-gradient(180deg,#07110a,#050806)}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}
+.kicker{display:inline-block;border:1px solid #267c48;background:#0b2415;color:var(--green2);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:800;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,76px);line-height:.98;margin:20px 0 18px;letter-spacing:-3px}
+h1 span{color:var(--green)}.lead{font-size:20px;color:#d2ddd7;max-width:650px}
+.hero-points{display:flex;gap:16px;flex-wrap:wrap;margin:28px 0}.pill{color:#cfe9d9;font-size:14px}.pill b{color:var(--green)}
+.mockup{border:1px solid #218b4c;border-radius:22px;padding:18px;background:linear-gradient(145deg,#0c1d12,#07100b);box-shadow:0 25px 80px rgba(0,0,0,.5),0 0 60px rgba(32,244,119,.08)}
+.screen{aspect-ratio:16/10;border-radius:14px;background:linear-gradient(135deg,#07120b,#123b20);border:1px solid #275c3d;padding:22px;display:flex;flex-direction:column;justify-content:center}
+.screen .mini{color:var(--green);font-weight:900;font-size:13px}.screen h2{font-size:30px;line-height:1.05;margin:10px 0}.bar{height:8px;background:#173521;border-radius:10px;margin:7px 0}.bar i{display:block;height:100%;width:70%;background:var(--green);border-radius:10px}
+.price-card{margin-top:16px;padding:18px;border:1px solid #267c48;border-radius:15px;background:#07110b;text-align:center}.old{text-decoration:line-through;color:#7f8c84}.price{font-size:44px;color:var(--green);font-weight:950}
+section{padding:78px 0}.white{background:#f4f7f5;color:#071009}.section-title{text-align:center;max-width:750px;margin:0 auto 40px}.section-title h2{font-size:clamp(30px,4vw,48px);line-height:1.05;margin:0 0 12px}.section-title p{color:var(--muted)}.white .section-title p{color:#536158}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:25px}.white .card{background:#fff;border-color:#dce5df;box-shadow:0 10px 30px rgba(0,0,0,.05)}.icon{font-size:28px}.card h3{margin:10px 0 7px}.card p{color:var(--muted);margin:0}.white .card p{color:#617067}
+.modules{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:900px;margin:auto}.module{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:14px;background:#08100b}.num{min-width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#041009;font-weight:900}
+.bonus{border:1px solid #1d6b3d;border-radius:18px;padding:24px;background:linear-gradient(135deg,#09160e,#07100b)}.bonus strong{color:var(--green)}
+.offer{background:radial-gradient(circle at 50% 0,rgba(32,244,119,.2),transparent 40%),#061009;text-align:center}.offer-box{max-width:680px;margin:auto;border:1px solid #267c48;border-radius:22px;padding:42px;background:#08120c}.offer-box h2{font-size:42px;margin:5px 0}.offer-price{font-size:58px;font-weight:950;color:var(--green);margin:5px}.guarantee{margin:25px auto 0;max-width:760px;padding:18px;border-radius:15px;background:#f4f7f5;color:#18221c}
+.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-weight:800}.faq p{color:var(--muted)}
+footer{padding:35px 0;color:#829087;text-align:center;border-top:1px solid var(--line);font-size:13px}
+@media(max-width:800px){.hero-grid,.modules{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.nav a:not(.btn){display:none}h1{letter-spacing:-2px}.hero{padding-top:48px}.offer-box{padding:28px 18px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">🚀 PRIMEIRA VENDA <span>NA KIWIFY</span></div>
+    <nav><a href="#curso">Curso</a><a href="#bonus">Bônus</a><a href="#faq">Dúvidas</a><a class="btn" href="#oferta">QUERO COMEÇAR</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <span class="kicker">Curso completo para iniciantes</span>
+   <h1>PRIMEIRA VENDA<br><span>NA KIWIFY</span></h1>
+   <p class="lead">Aprenda um passo a passo prático para escolher um produto, criar conteúdo, divulgar e estruturar sua estratégia para buscar sua primeira venda online.</p>
+   <div class="hero-points"><span class="pill">✓ <b>Aulas práticas</b></span><span class="pill">✓ Acesso ao conteúdo</span><span class="pill">✓ 5 bônus</span></div>
+   <a class="btn big" href="#oferta">QUERO MEU ACESSO AGORA →</a>
+   <p style="font-size:12px;color:#78857d;margin-top:13px">Pagamento e checkout realizados pela Kiwify.</p>
+  </div>
+  <div class="mockup">
+   <div class="screen"><div class="mini">CURSO ONLINE</div><h2>Do zero à sua primeira venda</h2><p style="color:#b9c9c0">Aulas organizadas, exemplos e tarefas práticas.</p><div class="bar"><i></i></div><div class="bar"><i style="width:45%"></i></div><div class="bar"><i style="width:82%"></i></div></div>
+   <div class="price-card"><div class="old">De R$ 97,00</div><div>Por apenas</div><div class="price">R$ 19,90</div></div>
+  </div>
+ </div>
+</section>
+
+<section id="curso" class="white">
+ <div class="container">
+  <div class="section-title"><h2>Um caminho simples para quem está começando</h2><p>Você aprende os fundamentos e transforma o conhecimento em um plano de ação.</p></div>
+  <div class="grid">
+   <div class="card"><div class="icon">🎯</div><h3>Escolha melhor</h3><p>Entenda como selecionar produto e público antes de começar a divulgar.</p></div>
+   <div class="card"><div class="icon">📱</div><h3>Crie conteúdo</h3><p>Aprenda formatos, ganchos e chamadas para criar conteúdo de divulgação.</p></div>
+   <div class="card"><div class="icon">📈</div><h3>Analise e melhore</h3><p>Acompanhe cliques, interesse e resultados para descobrir o que pode ser aprimorado.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="section-title"><h2>O que você vai aprender</h2><p>Conteúdo direto ao ponto, organizado em módulos.</p></div>
+  <div class="modules">
+   <div class="module"><div class="num">1</div><div><b>Entendendo a Kiwify</b><br><span style="color:var(--muted)">Plataforma, produtos e afiliados.</span></div></div>
+   <div class="module"><div class="num">2</div><div><b>Começando do zero</b><br><span style="color:var(--muted)">Conta, organização e primeiros passos.</span></div></div>
+   <div class="module"><div class="num">3</div><div><b>Escolhendo o produto</b><br><span style="color:var(--muted)">Produto, público e posicionamento.</span></div></div>
+   <div class="module"><div class="num">4</div><div><b>Conteúdo que chama atenção</b><br><span style="color:var(--muted)">Ganchos, roteiros e CTAs.</span></div></div>
+   <div class="module"><div class="num">5</div><div><b>Divulgação</b><br><span style="color:var(--muted)">Estratégias para conteúdo e redes sociais.</span></div></div>
+   <div class="module"><div class="num">6</div><div><b>Oferta e conversão</b><br><span style="color:var(--muted)">Como apresentar uma solução com clareza.</span></div></div>
+   <div class="module"><div class="num">7</div><div><b>Dúvidas e objeções</b><br><span style="color:var(--muted)">Como responder potenciais compradores.</span></div></div>
+   <div class="module"><div class="num">8</div><div><b>Análise de resultados</b><br><span style="color:var(--muted)">Cliques, conteúdo e próximos testes.</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="bonus" class="white">
+ <div class="container">
+  <div class="section-title"><h2>🎁 5 bônus exclusivos</h2><p>Materiais para acelerar sua execução.</p></div>
+  <div class="grid">
+   <div class="bonus"><strong>BÔNUS 01</strong><h3>20 Ganchos Prontos</h3><p>Ideias para abrir seus vídeos e conteúdos.</p></div>
+   <div class="bonus"><strong>BÔNUS 02</strong><h3>Roteiro de Vídeo</h3><p>Estrutura com gancho + conteúdo + CTA.</p></div>
+   <div class="bonus"><strong>BÔNUS 03</strong><h3>Checklist da Primeira Venda</h3><p>Lista prática para não esquecer etapas importantes.</p></div>
+   <div class="bonus"><strong>BÔNUS 04</strong><h3>Plano de 30 Dias</h3><p>Calendário simples para manter consistência.</p></div>
+   <div class="bonus"><strong>BÔNUS 05</strong><h3>Mentalidade do Afiliado</h3><p>Princípios para testar, medir e melhorar.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="oferta" class="offer">
+ <div class="container">
+  <div class="offer-box">
+   <span class="kicker">Oferta especial</span>
+   <h2>Comece hoje</h2>
+   <p style="color:#b7c5bd">Curso completo + 5 bônus</p>
+   <div class="old">De R$ 97,00</div>
+   <div class="offer-price">R$ 19,90</div>
+   <!-- TROQUE # PELO SEU LINK REAL DE CHECKOUT DA KIWIFY -->
+   <a class="btn big" href="#" onclick="goCheckout(event)">GARANTIR MEU ACESSO →</a>
+   <p style="font-size:12px;color:#78857d">Você será direcionado ao checkout seguro da Kiwify.</p>
+  </div>
+  <div class="guarantee"><b>🛡️ Garantia de 7 dias</b><br>Conheça o conteúdo e avalie se ele faz sentido para você dentro do prazo de garantia aplicável à oferta.</div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="container">
+  <div class="section-title"><h2>Perguntas frequentes</h2></div>
+  <div class="faq">
+   <details><summary>Preciso aparecer nos vídeos?</summary><p>Não necessariamente. O curso apresenta formatos de conteúdo que podem ser produzidos sem mostrar o rosto.</p></details>
+   <details><summary>Preciso ter experiência?</summary><p>Não. O conteúdo foi estruturado para iniciantes.</p></details>
+   <details><summary>O curso garante minha primeira venda?</summary><p>Não. Nenhum treinamento sério pode garantir uma venda. O resultado depende da execução, público, produto, oferta, tráfego e outros fatores.</p></details>
+   <details><summary>Como recebo acesso?</summary><p>Após a confirmação do pagamento, o acesso é disponibilizado conforme a configuração do seu produto na Kiwify.</p></details>
+   <details><summary>Posso desistir?</summary><p>A oferta prevê garantia de 7 dias, observadas as condições aplicáveis.</p></details>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">© 2026 Primeira Venda na Kiwify · Conteúdo educacional. Resultados não são garantidos.</div>
+</footer>
+
+<script>
+function goCheckout(e){
+  e.preventDefault();
+  const checkout = "COLE_AQUI_SEU_LINK_DE_CHECKOUT_KIWIFY";
+  if(checkout.startsWith("http")) window.location.href = checkout;
+  else alert("Configure o link do seu checkout da Kiwify no arquivo HTML antes de publicar.");
+}
+</script>
+</body>
+</html>
